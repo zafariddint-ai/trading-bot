@@ -1,4 +1,6 @@
-from flask import Flask, request import requests
+from flask import Flask, request
+import requests
+import requests
 app = Flask(name)
 BOT_TOKEN = "9206124491:AAFxu_3Nd4QIIfr6ku3ZkyZThmOvi8bc1YU" CHAT_ID = "5779661411"
 @app.route('/webhook', methods=['POST']) def webhook(): data = request.data.decode('utf-8')
